@@ -127,7 +127,11 @@ h2 {
 }
 .container {
   background-color: #fff;
-  padding: 2rem;
+  padding: 1rem;
   box-shadow: 4px 4px 8px rgba(0,0,0,0.1);
 }
 
+.invalid_input {
+  border-color: red;
+  color: #cc0000;
+}
