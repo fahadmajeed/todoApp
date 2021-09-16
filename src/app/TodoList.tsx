@@ -43,7 +43,6 @@ export const TodoList: FC<IListProps> = () => {
     } else {
       setValidationError("Task value can't be empty...");
     }
-    
   };
 
   const markDone = (taskName: string): void => {

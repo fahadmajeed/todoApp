@@ -12,7 +12,6 @@ export const Todo = ({ value, onClick, onEdit}: IProps) => {
         setEditMode("");
     }
     const hideEditBar = () => {
-
         setEditMode("")
     }
     const handleInputChange = (event: ChangeEvent<HTMLInputElement>): void => {
