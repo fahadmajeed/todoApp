@@ -1,17 +1,12 @@
 import React from "react";
 import "./todo.css";
+import { IProps } from "./interfaces";
 
-interface IProps {
-    value: String;
-    onClick: () => void;
-}
-
-export const Todo: React.FC<IProps> = ({ value, onClick}) => {
+export const Todo = ({ value, onClick}: IProps) => {
     return (
-        <div className="todo">
-            <button className="todo-check" onClick={() => onClick()}></button>
-            <div>{value}</div>
-        </div>
-    
+        <article className="num">
+            <button className="todo-check" onClick={() => onClick(value)}></button>
+            <h3>{value}</h3>
+        </article>
     )
 }
